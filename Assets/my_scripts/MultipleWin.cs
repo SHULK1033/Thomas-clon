@@ -6,21 +6,8 @@ using UnityEngine.SceneManagement;
 public class MultipleWin : MonoBehaviour {
     public int players;
     public string sceneName;
-    public string playerName;
+    [HideInInspector]
     public int victory = 0;
-
-    // Start is called before the first frame update
-    private void OnTriggerEnter2D (Collider2D other) {
-        if (other.gameObject.name == playerName) {
-            victory++;
-        }
-    }
-
-    private void OnTriggerExit2D (Collider2D other) {
-        if (other.gameObject.name == playerName) {
-            victory--;
-        }
-    }
 
     private void Update () {
         if (victory == players) {

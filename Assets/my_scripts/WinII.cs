@@ -10,7 +10,7 @@ public class WinII : MonoBehaviour {
     public string playerName;
 
     private void Start () {
-        multipleWin = GameObject.Find ("Win1").GetComponent<MultipleWin> ();
+        multipleWin = GameObject.Find ("Win").GetComponent<MultipleWin> ();
     }
 
     // Start is called before the first frame update
