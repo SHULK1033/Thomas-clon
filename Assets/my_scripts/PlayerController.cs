@@ -7,12 +7,14 @@ public class PlayerController : MonoBehaviour {
     public float jumpForce = 12f;
     int limitJump = 1;
     int totalJump;
+    [HideInInspector]
     public Rigidbody2D rb2D;
 
     void Start () {
         rb2D = GetComponent<Rigidbody2D> ();
         totalJump = 0;
     }
+
     void FixedUpdate () {
         if (Input.GetKey (KeyCode.D)) {
             transform.Translate (verticalSpead, 0, 0);
@@ -27,12 +29,13 @@ public class PlayerController : MonoBehaviour {
             }
         }
     }
+
     private void OnCollisionEnter2D (Collision2D other) {
         if (other.collider.tag == "floor" || other.collider.tag == "Player") {
             totalJump = 0;
         }
-        if (other.collider.tag == "agua"){
-            
+        if (other.collider.tag == "agua") {
+
         }
     }
 }
