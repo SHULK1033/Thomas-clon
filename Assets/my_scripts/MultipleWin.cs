@@ -6,7 +6,7 @@ using UnityEngine.SceneManagement;
 public class MultipleWin : MonoBehaviour {
     public int players;
     public string sceneName;
-    [HideInInspector]
+    //[HideInInspector]
     public int victory = 0;
 
     private void Update () {

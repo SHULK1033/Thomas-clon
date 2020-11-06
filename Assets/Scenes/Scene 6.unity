@@ -214,6 +214,11 @@ PrefabInstance:
       propertyPath: m_LocalPosition.y
       value: 0.43
       objectReference: {fileID: 0}
+    - target: {fileID: 3954015003757520621, guid: fccd6339001de3e489e33f8d0f77cbe2,
+        type: 3}
+      propertyPath: m_TagString
+      value: floor
+      objectReference: {fileID: 0}
     - target: {fileID: 4211676110633520946, guid: fccd6339001de3e489e33f8d0f77cbe2,
         type: 3}
       propertyPath: m_Name
